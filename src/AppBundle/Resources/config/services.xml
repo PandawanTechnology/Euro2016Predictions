@@ -1,0 +1,23 @@
+<?xml version="1.0" ?>
+
+<container xmlns="http://symfony.com/schema/dic/services"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
+
+    <services>
+        <service id="app.predictor.game" class="AppBundle\Predictor\GamePredictor">
+            <argument type="service" id="app.repository.neo4j" />
+        </service>
+
+        <service id="app.repository.neo4j" class="AppBundle\Repository\Neo4jRepository">
+            <argument type="service" id="pandawan_technology_neo4j.client" />
+        </service>
+
+        <service id="app.twig.extension.game" class="AppBundle\Twig\Extension\GameExtension" public="false">
+            <tag name="twig.extension" />
+
+            <argument type="service" id="router" />
+        </service>
+    </services>
+
+</container>

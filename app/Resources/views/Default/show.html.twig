@@ -1,0 +1,78 @@
+{% extends '::base.html.twig' %}
+{% block title %}{{ team1.get('name') }} - {{ team2.get('name') }} | {{ parent() }}{% endblock %}
+
+
+{% block body %}
+    <div class="page-header">
+        <h1>
+            {{ team1.get('name') }}
+            {% if game_has_score %}
+                <strong>{{ game.get('score_1') }}</strong>
+            {% endif %}
+            -
+            {% if game_has_score %}
+                <strong>{{ game.get('score_2') }}</strong>
+            {% endif %}
+            {{ team2.get('name') }}
+
+            <small>{{ game.get('played_on')|date }}</small>
+        </h1>
+    </div>
+
+    <section>
+        <div class="page-header">
+            <h2>Previous games</h2>
+        </div>
+        {% if has_previous_games %}
+            <div class="row">
+                <div class="col-sm-6">
+                    <h3>{{ team1.get('name') }}</h3>
+                    <ul>
+                        {% for previous_game_team1 in previous_games_team1 %}
+                            <li>
+                                <a href="{{ game_path(previous_game_team1) }}">
+                                    {{ previous_game_team1|game_outcome }}
+                                </a>
+                                <small>{{ previous_game_team1.get('g').get('played_on')|date }}</small>
+                            </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+                <div class="col-sm-6">
+                    <h3>{{ team2.get('name') }}</h3>
+                    <ul>
+                        {% for previous_game_team2 in previous_games_team2 %}
+                            <li>
+                                <a href="{{ game_path(previous_game_team2) }}">
+                                    {{ previous_game_team2|game_outcome }}
+                                </a>
+                                <small>{{ previous_game_team2.get('g').get('played_on')|date }}</small>
+                            </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+        {% else %}
+            <p>None</p>
+        {% endif %}
+    </section>
+
+    <section>
+        <div class="page-header">
+            <h2>Predictions</h2>
+        </div>
+        {% if prediction is null %}
+            <p>Not enough data to predict anything.</p>
+        {% else %}
+            {% set colors = ['success', 'info', 'danger'] %}
+            <div class="progress">
+                {% for i, team_prediction in prediction %}
+                    {% include ':Default:_progress_bar.html.twig' with {'prediction': team_prediction, 'color': colors[i] } %}
+                {% endfor %}
+            </div>
+            <a class="btn btn-{{ colors[0] }} disabled">{{ team1.get('name') }} <small>({{ (prediction[0]*100)|round }}%)</small></a>
+            <a class="btn btn-{{ colors[1] }} disabled">Draw <small>({{ (prediction[1]*100)|round }}%)</small></a>
+            <a class="btn btn-{{ colors[2] }} disabled">{{ team2.get('name') }} <small>({{ (prediction[2]*100)|round }}%)</small></a>
+        {% endif %}
+    </section>
+{% endblock %}

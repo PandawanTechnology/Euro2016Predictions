@@ -1,0 +1,11 @@
+game_show:
+    path: /game/{playedOn}-{team1Slug}-vs-{team2Slug}
+    defaults: { _controller: 'AppBundle:Default:show' }
+    requirements:
+        playedOn: "[\\d]+"
+        team1Slug: "[\\w\\-]+"
+        team2Slug: "[\\w\\-]+"
+
+homepage:
+    path: /
+    defaults: { _controller: 'AppBundle:Default:index' }

@@ -49,17 +49,16 @@ class GamePredictor
             return $this->generatePredictionsFromRankings($team1, $team2);
         }
 
-        $totalPrediction1 = ($predictionTeam1 * $nbGamesTeam1)/$nbGamesTeam1;
-        $totalPrediction2 = ($predictionTeam2 * $nbGamesTeam2)/$nbGamesTeam2;
-        $totalNbGames = $nbGamesTeam1 + $nbGamesTeam2;
+        $totalPrediction1 = max(0, ($predictionTeam1 * $nbGamesTeam1)/$nbGamesTeam1);
+        $totalPrediction2 = max(0, ($predictionTeam2 * $nbGamesTeam2)/$nbGamesTeam2);
 
-        $team1Prediction = $totalPrediction1/$totalNbGames;
-        $team2Prediction = $totalPrediction2/$totalNbGames;
+        $avg = abs(0.5 - $predictionTeam1 + $predictionTeam2);
+        $total = $totalPrediction1 + $avg + $totalPrediction2;
 
         return [
-            $team1Prediction,
-            1 - $team1Prediction - $team2Prediction,
-            $team2Prediction,
+            max(0, $predictionTeam1/$total),
+            max(0, $avg/$total),
+            max(0, $predictionTeam2/$total),
         ];
     }
 

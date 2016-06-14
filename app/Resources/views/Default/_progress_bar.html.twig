@@ -1,5 +1,5 @@
 {% if 0 != prediction %}
-    <div class="progress-bar progress-bar-{{ color }}" style="width: {{ prediction*100 }}%" title="{{ (prediction*100)|round }}%">
+    <div class="progress-bar progress-bar-{{ color }}" style="width: {{ (prediction*100)|round(10) }}%" title="{{ (prediction*100)|round }}%">
         <span class="sr-only">{{ (prediction*100)|round }}%</span>
     </div>
 {% endif %}

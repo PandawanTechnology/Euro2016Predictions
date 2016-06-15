@@ -11,11 +11,6 @@
             "app/AppCache.php"
         ]
     },
-    "autoload-dev": {
-        "psr-4": {
-            "Tests\\": "tests/"
-        }
-    },
     "minimum-stability": "dev",
     "prefer-stable": true,
     "require": {
@@ -30,7 +25,6 @@
         "pandawan-technology/neo4j-fixtures-bundle": "^1.0@dev"
     },
     "require-dev": {
-        "sensio/generator-bundle": "^3.0",
         "symfony/phpunit-bridge": "^3.0"
     },
     "scripts": {

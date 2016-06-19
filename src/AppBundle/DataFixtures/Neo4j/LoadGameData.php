@@ -68,9 +68,9 @@ CYPHER
             [LoadTeamData::TEAM_ITALIE, LoadTeamData::TEAM_SUEDE, '2016-06-17 15:00:00', 1, 0],
             [LoadTeamData::TEAM_REPUBLIQUE_TCHEQUE, LoadTeamData::TEAM_CROATIE, '2016-06-17 18:00:00', 2, 2],
             [LoadTeamData::TEAM_ESPAGNE, LoadTeamData::TEAM_TURQUIE, '2016-06-17 21:00:00', 3, 0],
-            [LoadTeamData::TEAM_BELGIQUE, LoadTeamData::TEAM_REPUBLIQUE_D_IRLANDE, '2016-06-18 15:00:00'],
-            [LoadTeamData::TEAM_ISLANDE, LoadTeamData::TEAM_HONGRIE, '2016-06-18 18:00:00'],
-            [LoadTeamData::TEAM_PORTUGAL, LoadTeamData::TEAM_AUTRICHE, '2016-06-18 21:00:00'],
+            [LoadTeamData::TEAM_BELGIQUE, LoadTeamData::TEAM_REPUBLIQUE_D_IRLANDE, '2016-06-18 15:00:00', 3, 0],
+            [LoadTeamData::TEAM_ISLANDE, LoadTeamData::TEAM_HONGRIE, '2016-06-18 18:00:00', 1, 1],
+            [LoadTeamData::TEAM_PORTUGAL, LoadTeamData::TEAM_AUTRICHE, '2016-06-18 21:00:00', 0, 0],
 
             [LoadTeamData::TEAM_SUISSE, LoadTeamData::TEAM_FRANCE, '2016-06-19 21:00:00'],
             [LoadTeamData::TEAM_ROUMANIE, LoadTeamData::TEAM_ALBANIE, '2016-06-19 21:00:00'],

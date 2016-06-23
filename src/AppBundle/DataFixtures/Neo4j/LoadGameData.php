@@ -74,16 +74,16 @@ CYPHER
 
             [LoadTeamData::TEAM_SUISSE, LoadTeamData::TEAM_FRANCE, '2016-06-19 21:00:00', 0, 0],
             [LoadTeamData::TEAM_ROUMANIE, LoadTeamData::TEAM_ALBANIE, '2016-06-19 21:00:00', 0, 1],
-            [LoadTeamData::TEAM_RUSSIE, LoadTeamData::TEAM_PAYS_DE_GALLE, '2016-06-20 21:00:00'],
-            [LoadTeamData::TEAM_SLOVAQUIE, LoadTeamData::TEAM_ANGLETERRE, '2016-06-20 21:00:00'],
-            [LoadTeamData::TEAM_UKRAINE, LoadTeamData::TEAM_POLOGNE, '2016-06-21 18:00:00'],
-            [LoadTeamData::TEAM_IRLANDE_DU_NORD, LoadTeamData::TEAM_ALLEMAGNE, '2016-06-21 18:00:00'],
-            [LoadTeamData::TEAM_REPUBLIQUE_TCHEQUE, LoadTeamData::TEAM_TURQUIE, '2016-06-21 21:00:00'],
-            [LoadTeamData::TEAM_CROATIE, LoadTeamData::TEAM_ESPAGNE, '2016-06-21 21:00:00'],
-            [LoadTeamData::TEAM_ISLANDE, LoadTeamData::TEAM_AUTRICHE, '2016-06-22 18:00:00'],
-            [LoadTeamData::TEAM_HONGRIE, LoadTeamData::TEAM_PORTUGAL, '2016-06-22 18:00:00'],
-            [LoadTeamData::TEAM_ITALIE, LoadTeamData::TEAM_REPUBLIQUE_D_IRLANDE, '2016-06-22 21:00:00'],
-            [LoadTeamData::TEAM_SUEDE, LoadTeamData::TEAM_BELGIQUE, '2016-06-22 21:00:00'],
+            [LoadTeamData::TEAM_RUSSIE, LoadTeamData::TEAM_PAYS_DE_GALLE, '2016-06-20 21:00:00', 0, 3],
+            [LoadTeamData::TEAM_SLOVAQUIE, LoadTeamData::TEAM_ANGLETERRE, '2016-06-20 21:00:00', 0, 0],
+            [LoadTeamData::TEAM_UKRAINE, LoadTeamData::TEAM_POLOGNE, '2016-06-21 18:00:00', 0, 1],
+            [LoadTeamData::TEAM_IRLANDE_DU_NORD, LoadTeamData::TEAM_ALLEMAGNE, '2016-06-21 18:00:00', 0, 1],
+            [LoadTeamData::TEAM_REPUBLIQUE_TCHEQUE, LoadTeamData::TEAM_TURQUIE, '2016-06-21 21:00:00', 0, 2],
+            [LoadTeamData::TEAM_CROATIE, LoadTeamData::TEAM_ESPAGNE, '2016-06-21 21:00:00', 2, 1],
+            [LoadTeamData::TEAM_ISLANDE, LoadTeamData::TEAM_AUTRICHE, '2016-06-22 18:00:00', 2, 1],
+            [LoadTeamData::TEAM_HONGRIE, LoadTeamData::TEAM_PORTUGAL, '2016-06-22 18:00:00', 3, 3],
+            [LoadTeamData::TEAM_ITALIE, LoadTeamData::TEAM_REPUBLIQUE_D_IRLANDE, '2016-06-22 21:00:00', 0, 1],
+            [LoadTeamData::TEAM_SUEDE, LoadTeamData::TEAM_BELGIQUE, '2016-06-22 21:00:00', 0, 1],
         ];
     }
 }

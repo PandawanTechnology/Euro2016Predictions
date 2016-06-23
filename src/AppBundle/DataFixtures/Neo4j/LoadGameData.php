@@ -84,6 +84,15 @@ CYPHER
             [LoadTeamData::TEAM_HONGRIE, LoadTeamData::TEAM_PORTUGAL, '2016-06-22 18:00:00', 3, 3],
             [LoadTeamData::TEAM_ITALIE, LoadTeamData::TEAM_REPUBLIQUE_D_IRLANDE, '2016-06-22 21:00:00', 0, 1],
             [LoadTeamData::TEAM_SUEDE, LoadTeamData::TEAM_BELGIQUE, '2016-06-22 21:00:00', 0, 1],
+
+            [LoadTeamData::TEAM_SUISSE, LoadTeamData::TEAM_POLOGNE, '2016-06-25 15:00:00'],
+            [LoadTeamData::TEAM_PAYS_DE_GALLE, LoadTeamData::TEAM_IRLANDE_DU_NORD, '2016-06-25 18:00:00'],
+            [LoadTeamData::TEAM_CROATIE, LoadTeamData::TEAM_PORTUGAL, '2016-06-25 21:00:00'],
+            [LoadTeamData::TEAM_FRANCE, LoadTeamData::TEAM_REPUBLIQUE_D_IRLANDE, '2016-06-26 15:00:00'],
+            [LoadTeamData::TEAM_ALLEMAGNE, LoadTeamData::TEAM_SLOVAQUIE, '2016-06-26 18:00:00'],
+            [LoadTeamData::TEAM_HONGRIE, LoadTeamData::TEAM_BELGIQUE, '2016-06-26 21:00:00'],
+            [LoadTeamData::TEAM_ITALIE, LoadTeamData::TEAM_ESPAGNE, '2016-06-27 18:00:00'],
+            [LoadTeamData::TEAM_ANGLETERRE, LoadTeamData::TEAM_ISLANDE, '2016-06-27 21:00:00'],
         ];
     }
 }
